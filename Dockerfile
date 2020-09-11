@@ -9,8 +9,8 @@ RUN apt-get update && \
     lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip python \
     imagemagick ccache schedtool vim apt-utils
 
-RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo && \
-    chmod a+x /usr/local/bin/repo
+ADD https://storage.googleapis.com/git-repo-downloads/repo /usr/local/bin/repo
+RUN chmod a+x /usr/local/bin/*
 
 WORKDIR /aosp/
 
