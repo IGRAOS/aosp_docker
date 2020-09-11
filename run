@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+if test -z ${1}; then
+    echo "You didn't provide path to AOSP: ./run /path/to/aosp"
+    echo "Proceed? [Y/n]"
+    read answer
+    if test $answer = "n"; then
+        exit 1
+    fi
+fi
+
+docker run --rm -it -v ${1}:/aosp igraosp bash
