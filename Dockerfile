@@ -8,7 +8,8 @@ RUN apt-get update && \
     libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev \
     lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip vim \
     libssl-dev gettext imagemagick ccache schedtool apt-utils bc \
-    python python3 python-pip python3-pip cpio module-init-tools
+    python python3 python-pip python3-pip python-dev python3-dev \
+    cpio module-init-tools kmod swig device-tree-compiler mtools
 
 RUN pip install mako
 
