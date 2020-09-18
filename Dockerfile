@@ -10,7 +10,7 @@ RUN apt-get update && \
     libssl-dev gettext imagemagick ccache schedtool apt-utils bc \
     python python3 python-pip python3-pip python-dev python3-dev \
     cpio module-init-tools kmod swig device-tree-compiler mtools \
-    rsync
+    rsync dosfstools gdisk
 
 RUN pip install mako
 
