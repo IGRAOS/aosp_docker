@@ -9,7 +9,8 @@ RUN apt-get update && \
     lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip vim \
     libssl-dev gettext imagemagick ccache schedtool apt-utils bc \
     python python3 python-pip python3-pip python-dev python3-dev \
-    cpio module-init-tools kmod swig device-tree-compiler mtools
+    cpio module-init-tools kmod swig device-tree-compiler mtools \
+    rsync
 
 RUN pip install mako
 
